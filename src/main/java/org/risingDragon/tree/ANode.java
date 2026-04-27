@@ -17,8 +17,4 @@ public class ANode<T> extends BaseNode {
         return Collections.singletonList(data);
     }
 
-    @Override
-    public AType getType() {
-        return type;
-    }
 }

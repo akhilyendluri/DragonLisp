@@ -5,14 +5,8 @@ import java.util.List;
 public interface Node {
 
     /**
-     *
-     * @return
+     * Return the value in the Node
+     * @return List of data in the node
      */
     List<?> getValue();
-
-    /**
-     *
-     * @return
-     */
-    AType getType();
 }

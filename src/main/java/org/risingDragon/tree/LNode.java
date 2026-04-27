@@ -14,8 +14,4 @@ public class LNode<T extends Node> extends BaseNode {
         return data;
     }
 
-    @Override
-    public AType getType() {
-        return AType.list;
-    }
 }
