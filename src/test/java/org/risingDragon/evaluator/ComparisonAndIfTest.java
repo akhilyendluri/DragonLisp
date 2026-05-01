@@ -1,7 +1,7 @@
 package org.risingDragon.evaluator;
 
 import org.junit.jupiter.api.Test;
-import org.risingDragon.Interpreter;
+import org.risingDragon.TreeWalkInterpreter;
 import org.risingDragon.Parser;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ComparisonAndIfTest {
 
     private Object run(String input) {
-        return Interpreter.eval(Parser.parse(input));
+        return TreeWalkInterpreter.eval(Parser.parse(input));
     }
 
     // --- Comparisons ---

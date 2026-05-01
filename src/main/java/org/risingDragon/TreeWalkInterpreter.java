@@ -8,15 +8,15 @@ import org.risingDragon.tree.Node;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Interpreter {
+public class TreeWalkInterpreter {
     private final EvaluatorRegistry evaluatorRegistry;
 
-    private Interpreter() {
+    private TreeWalkInterpreter() {
         this.evaluatorRegistry = new EvaluatorRegistry();
     }
 
     public static Object eval(final Node root) {
-        return new Interpreter().evalInternal(root, new Environment(null));
+        return new TreeWalkInterpreter().evalInternal(root, new Environment(null));
     }
 
     private Object evalInternal(final Node node, Environment environment) {
